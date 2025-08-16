@@ -143,10 +143,8 @@ POST http://localhost:8080/api/v1/order/add
 Content-Type: application/json
 
 {
-  "status": "pending",
   "buyerId": 1,
-  "farmerId": 1,
-  "totalPrice": 0
+  "farmerId": 1
 }
 
 ###
