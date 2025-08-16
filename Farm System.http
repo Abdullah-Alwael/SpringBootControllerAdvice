@@ -1,0 +1,173 @@
+# Farm System
+
+###
+# group: Farmer
+# @name Add a farmer
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Abdullah",
+  "age": 46,
+  "phone": "0500000000",
+  "email": "abdullah@email.com",
+  "location": "Saudi Arabia",
+  "farmName": "The moon"
+}
+
+###
+# group: Farmer
+# @name Get all farmers
+GET http://localhost:8080/api/v1/farmer/list
+
+###
+# group: Farmer
+# @name Update farmer
+PUT http://localhost:8080/api/v1/farmer/update/1
+Content-Type: application/json
+
+{
+  "name": "Abdullah updated",
+  "age": 26,
+  "phone": "0505500000",
+  "email": "abdullah@emailUpdate.com",
+  "location": "Saudi Arabia",
+  "farmName": "The moon updated"
+}
+
+###
+# group: Farmer
+# @name Delete farmer
+DELETE http://localhost:8080/api/v1/farmer/delete/1
+
+###
+# group: Plant
+# @name Add plant
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Palm Tree",
+  "description": "The tree",
+  "farmerId": 1,
+  "price": 100,
+  "stockQuantity": 50
+}
+
+###
+# group: Plant
+# @name Get all plants
+GET http://localhost:8080/api/v1/plant/list
+
+###
+# group: Plant
+# @name Update plant
+PUT http://localhost:8080/api/v1/plant/update/1
+Content-Type: application/json
+
+{
+  "name": "Tree updated",
+  "description": "The tree",
+  "farmerId": 2,
+  "price": 100,
+  "stockQuantity": 50
+}
+
+###
+# group: Plant
+# @name Delete plant
+DELETE http://localhost:8080/api/v1/plant/delete/1
+
+###
+# group: Buyer
+# @name Add a buyer
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+{
+  "name": "Customer 1",
+  "age": 22,
+  "phone": "0505050505",
+  "email": "Customer1@email.com"
+}
+
+###
+# group: Buyer
+# @name Get all buyers
+GET http://localhost:8080/api/v1/buyer/list
+
+###
+# group: Buyer
+# @name Update buyer
+PUT http://localhost:8080/api/v1/buyer/update/1
+Content-Type: application/json
+
+{
+  "name": "Customer 1 updated",
+  "age": 22,
+  "phone": "0505050505",
+  "email": "Customer1@email.com"
+}
+
+###
+# group: Buyer
+# @name Delete buyer
+DELETE http://localhost:8080/api/v1/buyer/delete/1
+
+###
+# group: Order / Extra
+# @name Get pending orders for a farmer
+GET http://localhost:8080/api/v1/order/filter/pending/1
+
+###
+# group: Order / Extra
+# @name Add order item
+POST http://localhost:8080/api/v1/order/add/item
+Content-Type: application/json
+
+{
+  "plantId": 1,
+  "orderId": 1,
+  "quantity": 5
+}
+
+###
+# group: Order / Extra
+# @name List order items
+GET http://localhost:8080/api/v1/order/list/items/1
+
+###
+# group: Order
+# @name Add an order
+POST http://localhost:8080/api/v1/order/add
+Content-Type: application/json
+
+{
+  "status": "pending",
+  "buyerId": 1,
+  "farmerId": 1,
+  "totalPrice": 0
+}
+
+###
+# group: Order
+# @name Get all orders
+GET http://localhost:8080/api/v1/order/list
+
+###
+# group: Order
+# @name Update order
+PUT http://localhost:8080/api/v1/order/update/1
+Content-Type: application/json
+
+{
+  "status": "pending",
+  "buyerId": 1,
+  "farmerId": 2,
+  "totalPrice": 0
+}
+
+###
+# group: Order
+# @name Delete order
+DELETE http://localhost:8080/api/v1/order/delete/1

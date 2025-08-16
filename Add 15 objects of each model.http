@@ -1,0 +1,539 @@
+### Adding 15 farmers to the system:
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Khalid Al-Mansour",
+  "age": 55,
+  "phone": "0531234567",
+  "email": "khalid.mansour@farm.sa",
+  "location": "Al-Qassim",
+  "farmName": "Green Oasis Farms"
+}
+
+###
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Fatima Al-Rashid",
+  "age": 48,
+  "phone": "0509876543",
+  "email": "fatima.rashid@farm.sa",
+  "location": "Hail",
+  "farmName": "Desert Bloom Farm"
+}
+
+###
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Ahmed Salem",
+  "age": 62,
+  "phone": "0567890123",
+  "email": "ahmed.salem@farm.sa",
+  "location": "Al-Ahsa",
+  "farmName": "Date Palm Haven"
+}
+
+###
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Noura Hassan",
+  "age": 39,
+  "phone": "0590123456",
+  "email": "noura.hassan@farm.sa",
+  "location": "Jazan",
+  "farmName": "Coastal Harvest"
+}
+
+###
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Bandar Abdullah",
+  "age": 51,
+  "phone": "0554321098",
+  "email": "bandar.abdullah@farm.sa",
+  "location": "Tabuk",
+  "farmName": "Northern Plains Produce"
+}
+
+###
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Laila Mohammed",
+  "age": 43,
+  "phone": "0501112233",
+  "email": "laila.mohammed@farm.sa",
+  "location": "Riyadh",
+  "farmName": "Capital Greens"
+}
+
+###
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Fahad Al-Qahtani",
+  "age": 58,
+  "phone": "0587654321",
+  "email": "fahad.qahtani@farm.sa",
+  "location": "Asir",
+  "farmName": "Mountain Fresh Farms"
+}
+
+###
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Sara Ali",
+  "age": 35,
+  "phone": "0540001122",
+  "email": "sara.ali@farm.sa",
+  "location": "Najran",
+  "farmName": "Southern Bounty Farm"
+}
+
+###
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Majid Ibrahim",
+  "age": 49,
+  "phone": "0572223344",
+  "email": "majid.ibrahim@farm.sa",
+  "location": "Medina",
+  "farmName": "Oasis Gardens"
+}
+
+###
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Hana Faisal",
+  "age": 41,
+  "phone": "0513334455",
+  "email": "hana.faisal@farm.sa",
+  "location": "Dammam",
+  "farmName": "Eastern Shore Produce"
+}
+
+###
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Salem Nasser",
+  "age": 53,
+  "phone": "0504445566",
+  "email": "salem.nasser@farm.sa",
+  "location": "Buraidah",
+  "farmName": "Central Plains Farm"
+}
+
+###
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Mona Rashid",
+  "age": 37,
+  "phone": "0565556677",
+  "email": "mona.rashid@farm.sa",
+  "location": "Al-Kharj",
+  "farmName": "Green Valley Farm"
+}
+
+###
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Turki Saad",
+  "age": 60,
+  "phone": "0596667788",
+  "email": "turki.saad@farm.sa",
+  "location": "Yanbu",
+  "farmName": "Red Sea Harvest"
+}
+
+###
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Amira Saleh",
+  "age": 44,
+  "phone": "0557778899",
+  "email": "amira.saleh@farm.sa",
+  "location": "Khamis Mushait",
+  "farmName": "Highland Farms"
+}
+
+###
+POST http://localhost:8080/api/v1/farmer/add
+Content-Type: application/json
+
+{
+  "name": "Omar Fahad",
+  "age": 50,
+  "phone": "0508889900",
+  "email": "omar.fahad@farm.sa",
+  "location": "Al Jubail",
+  "farmName": "Gulf Coast Gardens"
+}
+
+### Adding 15 Plants: -------------------------------------------------------------
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Organic Tomatoes",
+  "description": "Sweet, ripe organic tomatoes, perfect for salads and sauces.",
+  "farmerId": 1,
+  "price": 8.50,
+  "stockQuantity": 150
+}
+
+###
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Fresh Dates (Khalas)",
+  "description": "Premium Khalas dates, soft and naturally sweet.",
+  "farmerId": 3,
+  "price": 25.00,
+  "stockQuantity": 200
+}
+
+###
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Baby Spinach",
+  "description": "Tender baby spinach leaves, ideal for fresh consumption.",
+  "farmerId": 6,
+  "price": 12.00,
+  "stockQuantity": 75
+}
+
+###
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Local Bell Peppers",
+  "description": "Crisp and colorful bell peppers, mixed assortment.",
+  "farmerId": 2,
+  "price": 9.25,
+  "stockQuantity": 120
+}
+
+###
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Zucchini",
+  "description": "Freshly harvested zucchini, great for grilling or baking.",
+  "farmerId": 11,
+  "price": 7.00,
+  "stockQuantity": 90
+}
+
+###
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Cucumbers",
+  "description": "Crunchy and refreshing cucumbers, grown locally.",
+  "farmerId": 10,
+  "price": 6.75,
+  "stockQuantity": 180
+}
+
+###
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Eggplant",
+  "description": "Glossy purple eggplants, versatile for many dishes.",
+  "farmerId": 7,
+  "price": 7.50,
+  "stockQuantity": 60
+}
+
+###
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Green Beans",
+  "description": "Snappy green beans, excellent steamed or stir-fried.",
+  "farmerId": 5,
+  "price": 11.50,
+  "stockQuantity": 110
+}
+
+###
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Sweet Potatoes",
+  "description": "Nutrient-rich sweet potatoes, perfect for roasting.",
+  "farmerId": 14,
+  "price": 10.00,
+  "stockQuantity": 130
+}
+
+###
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Corn on the Cob",
+  "description": "Sweet and juicy corn, harvested fresh.",
+  "farmerId": 9,
+  "price": 5.00,
+  "stockQuantity": 250
+}
+
+###
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Lettuce (Romaine)",
+  "description": "Crisp romaine lettuce, essential for fresh salads.",
+  "farmerId": 4,
+  "price": 8.00,
+  "stockQuantity": 95
+}
+
+###
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Oranges (Navel)",
+  "description": "Zesty and sweet Navel oranges, rich in Vitamin C.",
+  "farmerId": 13,
+  "price": 15.00,
+  "stockQuantity": 160
+}
+
+###
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Potatoes (Russet)",
+  "description": "Versatile russet potatoes, good for mashing or frying.",
+  "farmerId": 12,
+  "price": 6.00,
+  "stockQuantity": 300
+}
+
+###
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Fresh Herbs (Mixed)",
+  "description": "A mix of fresh basil, mint, and parsley.",
+  "farmerId": 8,
+  "price": 18.00,
+  "stockQuantity": 40
+}
+
+###
+POST http://localhost:8080/api/v1/plant/add
+Content-Type: application/json
+
+{
+  "name": "Carrots",
+  "description": "Naturally sweet and crunchy carrots, great for snacks.",
+  "farmerId": 15,
+  "price": 7.25,
+  "stockQuantity": 220
+}
+
+### Adding 15 Buyers --------------------------------------------------------------------------
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+{
+    "name": "Faisal Abdullah",
+    "age": 30,
+    "phone": "0501234567",
+    "email": "faisal.abdullah@example.com"
+  }
+
+###
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+  {
+    "name": "Nadia Al-Ghamdi",
+    "age": 45,
+    "phone": "0559876543",
+    "email": "nadia.ghamdi@example.com"
+  }
+
+###
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+  {
+    "name": "Mohammed Zaki",
+    "age": 28,
+    "phone": "0534567890",
+    "email": "mohammed.zaki@example.com"
+  }
+
+###
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+  {
+    "name": "Huda Kamal",
+    "age": 33,
+    "phone": "0590011223",
+    "email": "huda.kamal@example.com"
+  }
+
+###
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+  {
+    "name": "Saud Khalid",
+    "age": 50,
+    "phone": "0507778899",
+    "email": "saud.khalid@example.com"
+  }
+
+###
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+  {
+    "name": "Aisha Omar",
+    "age": 25,
+    "phone": "0561112233",
+    "email": "aisha.omar@example.com"
+  }
+
+###
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+  {
+    "name": "Yousef Ahmed",
+    "age": 38,
+    "phone": "0542223344",
+    "email": "yousef.ahmed@example.com"
+  }
+
+###
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+  {
+    "name": "Dina Mansour",
+    "age": 41,
+    "phone": "0503334455",
+    "email": "dina.mansour@example.com"
+  }
+
+###
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+  {
+    "name": "Majed Salem",
+    "age": 29,
+    "phone": "0584445566",
+    "email": "majed.salem@example.com"
+  }
+
+###
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+  {
+    "name": "Reem Hassan",
+    "age": 36,
+    "phone": "0555556677",
+    "email": "reem.hassan@example.com"
+  }
+
+###
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+  {
+    "name": "Tariq Ali",
+    "age": 52,
+    "phone": "0596667788",
+    "email": "tariq.ali@example.com"
+  }
+
+###
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+  {
+    "name": "Layla Fahad",
+    "age": 27,
+    "phone": "0507778899",
+    "email": "layla.fahad@example.com"
+  }
+
+###
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+  {
+    "name": "Hamad Ibrahim",
+    "age": 40,
+    "phone": "0538889900",
+    "email": "hamad.ibrahim@example.com"
+  }
+
+###
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+  {
+    "name": "Nawal Said",
+    "age": 49,
+    "phone": "0569990011",
+    "email": "nawal.said@example.com"
+  }
+
+###
+POST http://localhost:8080/api/v1/buyer/add
+Content-Type: application/json
+
+  {
+"name": "Ziad Nasser",
+"age": 34,
+"phone": "0501010101",
+"email": "ziad.nasser@example.com"
+}
