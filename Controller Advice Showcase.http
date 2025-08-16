@@ -1,0 +1,65 @@
+###
+# @name ApiException, Order/Plant does not exist
+POST http://localhost:8080/api/v1/order/add/item
+Content-Type: application/json
+
+{
+  "plantId": 999999999,
+  "orderId": 1321321,
+  "quantity": 5
+}
+
+###
+
+# @name HttpMessageNotReadableException, JSON parse
+POST http://localhost:8080/api/v1/order/add/item
+Content-Type: application/json
+
+{
+  "plantId" ,
+  "orderId": 1321321,
+  "quantity": 5
+}
+
+###
+# group: Order / Extra
+# @name MethodArgumentNotValidException
+GET http://localhost:8080/api/v1/order/filter/pending/NOTEXPEXTED_ARGS
+
+
+###
+# group: Order / Extra
+# @name HttpMediaTypeNotSupportedException
+POST http://localhost:8080/api/v1/order/add/item
+Content-Type: application/xml
+
+<XML>
+<TEST>
+THIS IS AN XML TEST
+</TEST>
+</XML>
+
+###
+# group: Order / Extra
+# @name NoResourceFoundException
+POST http://localhost:8080/api/v1/order/control-the-server!/1
+
+
+
+###
+# group: Order / Extra
+# @name Method not supported exception, HttpRequestMethodNotSupportedException
+PATCH http://localhost:8080/api/v1/order/filter/pending/1
+
+
+###
+# group: Order / Extra
+# @name MethodArgumentTypeMismatchException
+POST http://localhost:8080/api/v1/order/add/item
+Content-Type: application/json
+
+{
+  "plantId": "ONE",
+  "orderId": "one",
+  "quantity": "Five"
+}
